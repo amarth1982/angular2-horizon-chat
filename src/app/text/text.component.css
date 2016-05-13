@@ -1,0 +1,16 @@
+.text {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 1em 0em;
+}
+
+.text input {
+  flex-grow: 99;
+  font-size: 1em;
+}
+
+.text button {
+  margin: 5px;
+  padding: 0.25em;
+  flex-grow: 1
+}

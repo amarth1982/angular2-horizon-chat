@@ -3,10 +3,16 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  '@horizon/client': 'vendor/@horizon/client'
 };
 
 /** User packages configuration. */
 const packages: any = {
+  '@horizon/client': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: './dist/horizon.js'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -29,6 +35,9 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/messages',
+  'app/message',
+  'app/text',
   /** @cli-barrel */
 ];
 
@@ -36,6 +45,7 @@ const cliSystemConfigPackages: any = {};
 barrels.forEach((barrelName: string) => {
   cliSystemConfigPackages[barrelName] = { main: 'index' };
 });
+
 
 /** Type declaration for ambient System. */
 declare var System: any;

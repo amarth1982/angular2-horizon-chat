@@ -1,0 +1,10 @@
+.message {
+  margin: 5px 0px;
+  padding: 0.2em;
+  display: flex;
+  float: left;
+}
+
+.right {
+  float: right;
+}

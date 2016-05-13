@@ -1,3 +1,4 @@
-<h1>
-  {{title}}
-</h1>
+<div class="flex">
+  <app-messages [messages]="messages | async" [currentUser]="user"></app-messages>
+  <app-text></app-text>
+</div>
